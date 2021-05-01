@@ -1,0 +1,361 @@
+{
+  "id": "b94c2dc3-5ad1-4651-b9ab-ae2f99958caa",
+  "version": "2.0",
+  "name": "testing-lab3",
+  "url": "https://auto.ru",
+  "tests": [{
+    "id": "ad838b4d-81a1-4a0f-be0a-188aa0c4db42",
+    "name": "Show my offers",
+    "commands": [{
+      "id": "930cfe12-7233-4206-9202-d42e8c042423",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba9cb81e-d19f-4337-9e0a-9a108ad75af6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.IconSvg_my-offers",
+      "targets": [
+        ["css=.IconSvg_my-offers", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f81ff6b-4ff4-4f79-8320-53dd347e425e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "994a93b0-1bab-4015-abde-47a773f0ad9c",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/my/all/"
+    }]
+  }, {
+    "id": "96ff31c4-2922-4a2f-866b-dbb8bfc3c57d",
+    "name": "Open website",
+    "commands": [{
+      "id": "e268201e-42ad-48d4-ad35-f0162e129bd2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8c4e10bf-8415-46d7-acd4-59bbe52a45b8",
+    "name": "Search",
+    "commands": [{
+      "id": "709ade77-24a5-4457-a33d-fb040db4160e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ec34d57-c902-4bfe-ab6c-dfc4e9e44505",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b55a328-7c42-4317-a670-9d2a71b3f4f4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7"
+    }, {
+      "id": "ca7ce0f3-2463-4fb8-a218-e27675eaa971",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "da0465c3-b58b-4ac8-a203-e718b0cf12a2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "5994b0c7-8b57-487f-ae2e-04f96fc81206",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "15e136f8-f92d-4194-8880-d26aa49caa2d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "a1a2c788-b475-4066-9038-2624c2afbea1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "c7d6db1d-242f-4341-bcf8-b79c8dbdaa4e",
+    "name": "Change region",
+    "commands": [{
+      "id": "c5ea808d-3b42-4593-94e6-a4ea59522c44",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7499cab5-0214-43c4-af53-90f54176b5de",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/span",
+      "targets": [
+        ["css=.GeoSelect__title-shrinker", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[3]/div/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Санкт-Петербург + 300 км')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c6c10e-aaef-4a13-9295-d197d20414d6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//span[contains(.,'Сохранить')]",
+      "targets": [
+        ["css=.Button_hovered > .Button__content", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0e08045f-02c4-41d7-9180-7fd209873a71",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div[2]/div[2]/div/div[2]",
+      "targets": [
+        ["css=.Slider_size_s > .Slider__click-bar", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "396d25b9-0c77-4c86-80a4-0ebb43c45397",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Сохранить')]",
+      "targets": [
+        ["css=.Button_hovered > .Button__content", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e7372a6-dace-4b53-9415-cbc3478979eb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "5fa9046e-0fa2-474e-b284-11c6f7b6b033",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/moskva/"
+    }]
+  }, {
+    "id": "61c13d75-5c5b-4bc3-9faf-189241c540c4",
+    "name": "Change distance",
+    "commands": [{
+      "id": "c504bb22-f33d-4fa4-af5f-cbf06992915b",
+      "comment": "",
+      "command": "open",
+      "target": "/moskva/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdec7129-9d1f-4798-a688-aa7962797e85",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/span",
+      "targets": [
+        ["css=.GeoSelect__title-shrinker", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[3]/div/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Москва + 300 км')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f7ed600-4b5d-4da9-b62a-21e3a932f41b",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "xpath=//div[6]/div/div[2]/div[2]/div",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d05474e9-0a98-457a-b904-c462de3b4d78",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div[2]/div[2]/div/div[2]",
+      "targets": [
+        ["css=.Slider_size_s > .Slider__click-bar", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8050c248-5617-4483-ad4e-1ffb84820a12",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Сохранить')]",
+      "targets": [
+        ["css=.Button_hovered > .Button__content", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ffeb25-1c00-4333-ab9c-6d935b5ee192",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/div/div/span",
+      "targets": [
+        ["css=.GeoSelect__title-shrinker", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[3]/div/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Москва + 1000 км')]", "xpath:innerText"]
+      ],
+      "value": "Москва + 300 км"
+    }]
+  }, {
+    "id": "73b7a4a0-8261-42ac-af36-27e37bfffc36",
+    "name": "Chinese search",
+    "commands": [{
+      "id": "95b2c0f0-72ce-4d32-ab95-01542ae2ac4a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad1bdaf5-6a61-4701-83f1-cad37635268b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__input_r8 .TextInput__control",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dfacf7d-8bf7-4dd8-b586-d500df9f8aef",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "830bc4b9-e85d-4d91-9859-11182c98b3d5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2dade553-c570-4b77-b112-fd630690ce8a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "875bb7e1-d422-4c57-9579-9b95029ec0a5",
+    "name": "No change distance",
+    "commands": [{
+      "id": "24999d66-2792-4142-9881-44b6c78f6da3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38ab4126-5ac5-4b8f-880e-62f00e04968c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.GeoSelect__title-shrinker",
+      "targets": [
+        ["css=.GeoSelect__title-shrinker", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[3]/div/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Санкт-Петербург')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b832e5a3-22ee-46ba-9555-fe2cde509609",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Сохранить')]/..[@disabled]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "2edd08b5-7bb7-41c6-b37c-33986a0d913d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ad838b4d-81a1-4a0f-be0a-188aa0c4db42"]
+  }],
+  "urls": ["https://auto.ru/"],
+  "plugins": []
+}
