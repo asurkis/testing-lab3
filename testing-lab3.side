@@ -265,7 +265,7 @@
     }]
   }, {
     "id": "73b7a4a0-8261-42ac-af36-27e37bfffc36",
-    "name": "Chinese search",
+    "name": "Search Chinese",
     "commands": [{
       "id": "95b2c0f0-72ce-4d32-ab95-01542ae2ac4a",
       "comment": "",
@@ -344,6 +344,3377 @@
       "comment": "",
       "command": "assertElementPresent",
       "target": "xpath=//span[contains(.,'Сохранить')]/..[@disabled]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "20f08fa5-374f-42ca-ba33-dd55e14436e9",
+    "name": "Search empty",
+    "commands": [{
+      "id": "8c78a897-2755-4be1-851e-158ddfae0a84",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f41d42-759a-412f-aae3-f9ae6e16d5e9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf91c9df-20fe-4853-a1b3-75fa3c57f124",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "43b64d8a-2001-4d1b-9c16-85830710ccce",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "d8a73efb-31b1-4c88-abde-4cec0d509ec2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "3910f40a-1c47-4b11-bdd3-1d18e81f53f6",
+    "name": "Search spaces",
+    "commands": [{
+      "id": "8644dedb-1ba9-45fe-8300-89a87c232f2c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d0f85ec-d1c1-4754-9889-ea0858bb4cc6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 > .TextInput__box", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span", "xpath:idRelative"],
+        ["xpath=//label/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по объявлениям')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0b5de0b-3c71-45bf-bca5-a34e18fa0b0d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='     ']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "     "
+    }, {
+      "id": "24e7df94-9726-46e8-b3b5-eda7ac23ff02",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='     ']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "25b02139-0a40-4ba6-b001-ad4c5e8d4098",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div/button/span/span",
+      "targets": [],
+      "value": "Audi"
+    }, {
+      "id": "87278503-529f-4a70-bed5-c0c3df81d0c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/button/span/span",
+      "targets": [],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "417aaf6d-b83a-4137-903e-a638d36f1b2e",
+    "name": "Search English",
+    "commands": [{
+      "id": "fb21b04b-43d5-431b-b36a-50832ceb23cf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e787b8c-9817-4787-b1b4-f5afadd6afd3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a10a244-bac8-4107-b243-1c54b431cab4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi Q7"
+    }, {
+      "id": "3bda7ee8-e5d1-48fa-8bd3-1c945abf2e51",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "18b71b86-db5a-45ee-8c04-0b6f1631cb59",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "81b16b8b-98a7-4acf-be49-b39a653c8a17",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "c4470d21-6f9f-41b3-a6ae-5076fdfd44b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "b0968e38-8443-4092-bb7d-16d9fe627517",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "676ea7e9-c855-455f-977b-c4acd9113534",
+    "name": "Search Runglish",
+    "commands": [{
+      "id": "3a7ecb1c-cc3f-4f33-bdd8-e34d4fb9c0e0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a710016-33f3-4565-ac6a-7739e59bb37d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e596162e-6c78-441a-9456-bd9b88afb035",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7"
+    }, {
+      "id": "c75f8d92-f877-4577-ba50-a3aafd72153b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d25c2102-3f27-4e8a-8c72-2d3f70832f4f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "273f74d3-10db-4b2a-8788-ce85a81e20cd",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "feadbf3c-3926-477b-b5ae-f3cf462bf56c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "4a163564-8634-42e7-9cea-f08c381a0f4c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "26aff823-c87e-47f0-a507-3c8761ab805f",
+    "name": "Search with spaces before",
+    "commands": [{
+      "id": "6693ecee-1393-4633-a017-27a1e077d01c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "135bfc75-9279-4040-b037-55e58505fbb0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "903a0321-5f1c-43a4-89fb-419af99ca9e6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Ауди ку7"
+    }, {
+      "id": "1ae59894-bfd5-4dba-80f9-634b0c4b25a1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6db99d65-b205-468f-b95c-035862c23d46",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b1977a17-8d66-4f07-8714-ab360fdc62e2",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "133d3e93-edad-44f4-b2a8-2320aa9b4d09",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "f435c105-40c8-48cf-aaca-70c53a842153",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "f25ff247-33eb-4b96-b55d-ef7869ca3dba",
+    "name": "Search with spaces after",
+    "commands": [{
+      "id": "11de711c-8671-4e84-8490-460b0579ff11",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b0f8b32-36ca-4735-8a8a-e7c68bf55f73",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "604e2a7a-11c2-4bd8-a847-97dc120f3ef5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7   "
+    }, {
+      "id": "251758aa-c6ce-4778-b741-afc94e5352c9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a9bd682c-4c73-4023-8833-6454503d1d36",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "f0b75fea-51ad-4f75-877e-383b82095a54",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "3fd517db-15b3-41f9-b183-0c4374e32c38",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "f29793d3-4669-4cc3-908a-957255f6729f",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "0e3b3df5-ed9b-4f70-9627-06dded16f467",
+    "name": "Search with spaces",
+    "commands": [{
+      "id": "fbee9e97-cd02-49dc-81cb-006cbae6a727",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e09009c6-6938-4437-906e-53d774c23383",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f3fc219-bc38-4bf1-9614-22bddd09df6f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Ауди ку7   "
+    }, {
+      "id": "88b46253-a44b-4f6f-917c-fd9d823b38be",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "428fd9e0-e45f-44bd-8091-d21d6b3b1a06",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "257a0240-406e-41b7-a0f0-194d67584d7c",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "2447a3d9-d978-4de2-8081-7308cf9c4fba",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "1205c699-e2b2-4052-9ceb-c1c4115a04a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "01532aa1-9781-4fba-80a6-9eae5a8cab9c",
+    "name": "Search English with spaces before",
+    "commands": [{
+      "id": "470fb1c0-8808-45b3-9014-48efbaf59002",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01230504-7cdc-4ebc-90dc-2b07b0d21cdb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c29a6298-0c06-4732-a6f6-82486802a00e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi Q7"
+    }, {
+      "id": "04c3a20c-b30f-41aa-9a6f-8099652298ea",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bba1e78b-a9f1-417d-99d8-8f5eb1f7a7bc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b799f506-ad75-44df-81d2-47e586882ddb",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "b48169cc-ed13-4fc4-9a4c-de4da58eef57",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "f36a940b-379a-4c79-a930-e7735964361c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "eb3c4679-7bc5-4fb6-bc32-070af50af8ef",
+    "name": "Search English with spaces after",
+    "commands": [{
+      "id": "5550a914-00d9-4a33-843f-031c7f47663e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4bd0ea9-d618-432f-a471-450cab3bd35c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff8aeca2-7d29-4caf-9fd8-6456bed19e90",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi Q7   "
+    }, {
+      "id": "049e7a99-3b0e-482b-879c-e5a538de331f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9dc8a78d-4249-4f75-975a-252f3a6cd4e2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "9460e7b1-3ed0-4721-9f88-875420ac106b",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "c6ea02ad-cedf-4506-87b2-2c43402380f8",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "581b2c99-7fc3-4aba-8962-16ce21e710ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "88336713-21fa-4381-837e-d0b068144aba",
+    "name": "Search English with spaces",
+    "commands": [{
+      "id": "0b8599d8-eb5c-4afb-aeeb-0bc33e504391",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29ea4869-49df-4e99-b852-8515612cf084",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ae9b749-b2bd-4c2a-a3ac-f5bc78a395a8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi Q7   "
+    }, {
+      "id": "3874c87a-257a-489e-8dce-22efce3b0272",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ae51ed08-129c-4b04-b73a-c512e031b85e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "36505421-d34d-496c-b501-1ce215c7fb92",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "23e71f60-d0cc-42d0-9afa-483a1a14b023",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "131f06a7-cad5-4778-ba66-47f8aa5ed579",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "92d2a311-6ebd-43e8-af6f-519affdd0831",
+    "name": "Search Runglish with spaces before",
+    "commands": [{
+      "id": "e995f5e4-f25c-4da1-9ead-4dcdfbc7fe81",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb3d5f66-443c-479f-99a8-6a0f4b142c04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff3588d1-e497-4ebd-99b4-be3220989d56",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi ку7"
+    }, {
+      "id": "92e3cae1-250e-4b94-9cb3-b57ea1ef98f6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ac3dba78-71e3-48f2-b924-12ee218fc2e4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "d16810bc-30a5-4741-ae5d-1cd6bae709a6",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "72c89b0b-cecd-4c2f-8dc0-5d15d1354b7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "aff6b4b5-23ed-4270-9273-fc7f1f8ef5ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "66db3810-63c2-4152-ad7c-0dd8c46ca4e3",
+    "name": "Search Runglish with spaces after",
+    "commands": [{
+      "id": "8ea7eedd-cb2b-468b-a895-9787b7ee16ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97646156-dbd4-40fe-8494-4e3d61aa1e06",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aaa8ebb-c220-4159-b690-f12bdd8e7d55",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7   "
+    }, {
+      "id": "8710829b-cfc7-4936-b8dc-c7bafaaa142a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fea61f43-b9b9-4230-9c18-071af5cf653d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "5bbb551f-00b4-452a-8c94-7b74d25cb63f",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "642231fb-a4c1-4d8f-862d-6ddf01f379d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "7076728f-69d3-4163-a502-689aa2b65f60",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "546465fe-68e7-4c83-b9ed-81767c9b855d",
+    "name": "Search Runglish with spaces",
+    "commands": [{
+      "id": "1b2a412c-022c-4a45-a14d-03e58c175421",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f64b7c0e-d4d6-4803-9631-e827d3ffa04b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d8e6176-7c13-4b50-8590-3fa979d6e80b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi ку7   "
+    }, {
+      "id": "f52fe2f5-24c9-4512-a87c-7f709fbee79e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fa6b997a-1ecb-4d5d-a8f3-e08b5e6f51cd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "18451c19-26ca-4121-bfcb-4b113b21ade4",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "3987cdfe-d829-4e02-a486-36315bc0bdc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "00f7f7ca-e028-487f-9acd-8c6acfef03f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "7afa4d28-c0ee-4287-8387-9f3f31e0d793",
+    "name": "Search with newline before",
+    "commands": [{
+      "id": "fd7771cd-4117-4d8e-9fa1-e89ab80af4c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecedb742-d8e0-4d3e-bd94-0f144ca1b005",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f3aadc-8804-4203-8a1f-01dd1cdc3294",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nАуди ку7"
+    }, {
+      "id": "09f641bd-0ea7-4ebe-aee8-f52617db952a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3fe76bd0-414f-4581-bceb-654075617087",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "30508898-e020-4654-8905-1bf04dc53cd9",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "2b8e732d-fa39-4bd4-9b03-3ec2dcdb026c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "6470bc14-ff5e-4dd4-8088-43ce738210f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "f3faaab1-0c5a-4acb-b210-dc20c6629ae7",
+    "name": "Search with newline after",
+    "commands": [{
+      "id": "c6532495-45b7-4023-8b48-491e7fa89990",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "370db17a-df70-4da3-a888-ff355feaf9b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55583101-1c9d-4d3c-bd58-6863cb5ba7f1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7\\n"
+    }, {
+      "id": "1e2cae1b-302d-4570-ac96-b93db2187d37",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "48346746-4b30-43d1-adef-689706bed780",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "46adc9c1-6f9e-4c43-b6fd-95742667621c",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "69556a13-21ff-4b63-ab90-1a4d54e57c84",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "9945e304-8039-446d-8f97-19ae93a62ac1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "cfe30d7c-4719-4fa5-91ba-1f604b92024e",
+    "name": "Search with newline",
+    "commands": [{
+      "id": "fb72d483-cb66-47cd-96f8-0f1b14005654",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d4f60b6-8967-42b6-8b60-78ef6c7d01fe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b30e3dc7-2dff-46d7-bc72-8446e0c7c6f6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nАуди ку7\\n"
+    }, {
+      "id": "f0824590-3e72-456b-85a3-5b24b78d82ce",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@value='Ауди ку7']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cddaf816-1ce8-48b6-a31a-b73888f5bfc9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "3793b918-c0c1-4238-ba19-7ffe832c99be",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "956bd377-99fe-402a-96b3-c322c46596df",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "5d7a7aae-b7b5-40f3-9a8b-d619196112a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "6a87a95d-f0ca-4231-b059-d45821217f6f",
+    "name": "Search Chinese with spaces before",
+    "commands": [{
+      "id": "1e21d1d5-5d20-45cd-ae32-ba3ef62d6b2a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a24b65f-b396-45de-b94d-a8ba7b28110e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__input_r8 .TextInput__control",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac510c0c-6754-41f4-8bc0-950881dee13f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "cc334b90-62f9-47db-9eb2-9e3954148dd1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bcde5e76-c96e-4461-9dc9-b50cc9184e03",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "ffcf6a9b-c933-4d2d-a805-08160d8c6faa",
+    "name": "Search Chinese with spaces after",
+    "commands": [{
+      "id": "43003d37-09f5-40d3-8d56-c28ae10ca9d1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c14ec657-f22e-4277-8787-b5500fba41fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__input_r8 .TextInput__control",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3704546-8a5c-4d44-89b5-49cb6353c22f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "c4d26ad3-adcf-46e7-ae1c-64eeb6d2bdf3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "14db8ea9-ff4d-4dfe-94f0-5e49bda72491",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "522827c6-5e31-4727-91fe-f5bae9e7a841",
+    "name": "Search Chinese with spaces",
+    "commands": [{
+      "id": "81cc29d4-6ff5-46d1-a91d-725c5c664980",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1920992-a09b-4442-9c21-33fbfd31944b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__input_r8 .TextInput__control",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd09a68-d242-4b21-92cf-39cd75c4fb08",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "69ce4a29-9123-44be-87e2-6ea131718991",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ccfdbf07-c5b9-4872-a149-d31bfecdd2c6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "c60b1fb8-ef9a-4cf6-ba84-86a5f8785e17",
+    "name": "Search newline",
+    "commands": [{
+      "id": "d619f23f-0450-4edb-b5ba-8f55e9dc46a4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc05ba04-3957-4344-8065-8730ab2e5495",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__input_r8 .TextInput__control",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ce2bcd7-7317-4186-a549-3a761f4ba06b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\n"
+    }, {
+      "id": "8f070349-2efd-4953-a0f8-a5edba5dcd23",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.TextInput__input_r8 .TextInput__control:nth-child(2)",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7d6f5ff7-5c5a-4c33-ac87-d951ae73974d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "ae1b9ede-ac3d-4d89-b6ad-b7e803f2d592",
+    "name": "Search normal + Chinese",
+    "commands": [{
+      "id": "5bdeab17-bd06-49a0-ad45-29ded237077e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "107d0629-5904-4e2d-b6f9-54caf994ebd7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa1abe5-66a3-4176-ab69-e5462a849cad",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "ebb60cfc-a67f-4692-9d79-53fe5884f52c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "add6370e-03ff-4830-b8c0-066f82556ac2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "8babc906-6e2c-4333-963a-51fcec1a1a6e",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "c01c2d29-15d5-4aa9-a8d2-50de8f520485",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "d0b6f875-fc80-4f32-a1d5-258e95dd6ace",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "d976f763-c08c-4122-acdb-a73fde45590a",
+    "name": "Search English + Chinese",
+    "commands": [{
+      "id": "b49d703d-583c-4a9a-a5a5-5c843bd64da9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1decfbd2-77ce-4a81-9167-03366e3e3f57",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb8b1189-8b62-4272-bd2b-6c0e8efbb9ac",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "13252f5d-9f09-4268-9194-f022f58bf409",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9d2451f1-3613-45db-9857-cbb7117c335e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "7f0ca033-1581-4361-bc8e-2766c37349bf",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "8db74edb-95da-4119-9721-32c1449b7831",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "a5c2f202-b3a1-41ce-b90a-a15d50c8d746",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "2095a9fe-f5ec-47fa-bec7-e444a176a098",
+    "name": "Search Runglish + Chinese",
+    "commands": [{
+      "id": "6c97d1fb-f743-4c49-8b24-78d654f93c8c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7e43ab2-0ed6-445e-8a7d-b7fd6d957c48",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad084b86-9032-4b5c-a9da-d02a4713e7ed",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "78890421-38f5-48a4-a05c-fd649f900156",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "81f0851b-9bdd-4039-8fd9-1da1b0acb694",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "24f8592e-8b6d-4e70-9d5f-526f30b5dd2c",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "2a87a224-c94e-4d5d-b60b-67de167b370d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "de7b1964-5b53-400f-9c7e-d5fb3dbd2c1b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "b8dbffe4-9974-4e29-badf-419cae5ed8b4",
+    "name": "Search Runglish + Chinese with spaces before",
+    "commands": [{
+      "id": "37d28e17-d740-4cae-85db-550e13f0df21",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fe9ba88-3ce3-4c85-a48e-5c055a7d8aad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4e8cbb-e2d7-4048-9e90-e5d8198ef39a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "ed002311-d372-496a-b0f7-7ed6dcf20fbd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6a9139b8-8052-4146-baf4-8157b5079bde",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "f9d521b1-a540-4f21-b01e-b1807bc8a2de",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "ee053a7f-b12a-4d45-af96-0ae29ccf2193",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "be6f6e94-60bf-4ec6-8dba-31f54938785d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "f35a814a-67ca-4247-b979-af2c176decef",
+    "name": "Search Runglish + Chinese with spaces after",
+    "commands": [{
+      "id": "a7c1f7c4-8098-4790-bccc-a71725ec13d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6dd99c07-605d-45a0-876a-65888678e0c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0dd4919-7dcd-42dc-a8a5-29e4e7cdac93",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "eb2bb242-1441-4f7f-a28c-5f6e52aa7138",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "539adbe2-6243-4322-86cf-f7ab2f52bc4d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "ccb9e804-629d-490a-911c-e1b41a6232a8",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "faffc187-cc69-4fcf-8bb6-8e18e1da9cce",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "053f7a1f-7e1a-4ede-9a17-f90160ca044d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "28a06e00-153c-49fa-99f0-c6a6d321cc88",
+    "name": "Search Runglish + Chinese with spaces",
+    "commands": [{
+      "id": "c47c683d-ad04-4259-8e36-57a5d57c88b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f30237cc-3b7e-4c39-92a4-53c0bba98887",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f48c097a-0c05-414c-9ca5-927d85922d55",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "563f334d-a859-4899-97d9-fa7a96c5f615",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "254d44f8-c857-432c-8198-67467b136381",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "4202277f-d78b-4fee-9053-15b82fe53cef",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "a1a1db27-4ac0-422b-a985-5ce737ee9999",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "5c9ec128-c84d-4645-b958-8f7bc103f5d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "036ae1e9-77a8-46d8-bcf9-34d9b48f075f",
+    "name": "Search English + Chinese with spaces before",
+    "commands": [{
+      "id": "673b6028-03e9-4bb9-9e70-d5bf4d82b493",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d3b5ea0-52b7-4b38-bc21-21d5773ff92c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d8468be-8508-4474-85f2-121a139aa53a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "a6c6d77e-c886-4bbc-8a2c-5065ad0da3db",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9fbb350c-ba26-4dad-8163-faf18b0d3380",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "32726639-0716-4ee8-b400-dd1c0d8cf8a9",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "0fb8dd89-fb43-402b-8d07-35c8bd2ebf4c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "5686114d-688b-4638-ace6-3095a4f0bbb0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "8396c1d2-177e-4a0e-9e70-1386b0b2cd49",
+    "name": "Search English + Chinese with spaces after",
+    "commands": [{
+      "id": "46406a6c-71de-401f-a00b-09ac4c8e8acd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83af7113-455a-454a-a0a0-9841d4bffe1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26c53d77-9690-408c-b33f-d7728b54d5e7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "c13619c5-0196-4778-88a8-dbe1e84dc925",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "31b441ba-a306-417f-abe1-b34b08fa5173",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "bab06d55-6b07-4a38-aad1-f77d9158b5f7",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "2192bd25-31ea-4dbf-951a-65bce24de9c9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "f80458a9-cbec-43b6-aba6-f40229d7cbf9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "94457a4a-5c67-420e-9270-9f704cc725a1",
+    "name": "Search English + Chinese with spaces",
+    "commands": [{
+      "id": "fc6d1d50-c8e0-477e-abef-b8c121d5eb78",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d1d8933-5ae3-40ec-a5b6-b1b43ceefe5f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "056d5426-3790-4b5a-a174-3ea5ead3099f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Audi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "26cec870-5821-46a7-a42e-fdf819aaaff2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "38277752-a3b6-4025-ae90-bdecfd5e568a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c7ea04ff-90d6-4112-87a3-414048f454fe",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "e784b797-351c-4878-a9c0-bb73df437e29",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "7772a6ef-bbe7-45a7-bff2-81c42135d5f6",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "94303f05-8d97-47a3-a373-f3fc0b277d74",
+    "name": "Search English + Chinese with newline before",
+    "commands": [{
+      "id": "e3df1b7b-5e0b-478c-8763-8a025d38f8a3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8277550c-d36b-4310-bb61-8047303b9965",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7d6bdf-782b-4fa6-9f88-3a61cf0b4b6e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nAudi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "c0d0f875-4ac9-4a6e-9c92-56083ac39cc0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "52949591-e2d5-42cb-8b5d-6e116bb84e9a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "eeb7e80c-f4fd-4bd4-8d88-c7eec8a8cd25",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "9b8ec81f-2784-456b-8044-4ed5f130e050",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "226d92d7-ef74-4b71-b8ed-e9d037335b16",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "d6a37eab-8a29-48b0-8952-8fc4fddec3c8",
+    "name": "Search English + Chinese with newline after",
+    "commands": [{
+      "id": "f51733fd-0d51-4f5c-be7d-0fedfc132ab9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85de3625-e5df-4af3-aa20-805989b75b9b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16dd8f37-0d6e-4b0e-8936-047947050ede",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活\\n"
+    }, {
+      "id": "5a624f0f-cd0b-4c15-b5aa-2d60ce4a9eac",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cad4b12f-cac4-445e-96d0-d825eb331a06",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "3bf81048-7132-4543-8dd4-bd39ee0370b1",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "be42e2e5-3ffb-40c7-bcf3-692a8c9687e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "66179cca-2cdb-4133-9409-be1ef6a70af0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "4460232d-7409-4f7d-af43-8543fe851939",
+    "name": "Search English + Chinese with newline",
+    "commands": [{
+      "id": "e8a94e3e-e116-4cef-bf9c-ba49b37bd9db",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aa1ea94-b0f4-4a3c-8e53-506f95765651",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9a2655-f1e4-4bf9-8f40-0d354ebb8cf0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nAudi Q7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活\\n"
+    }, {
+      "id": "432da582-92f5-4a3e-91d3-ca06b1b9f45b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c2e0f693-9833-4410-85b0-2406eed3c80b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "2d661b2e-b8c5-4585-9599-8da25a9da5b2",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "5cc22712-dab4-46be-854e-27851a8588e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "f4f3a80f-147d-4215-a4df-def0dd542e0b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "0a664b22-09db-4cfa-843d-602f9c646f1c",
+    "name": "Search Runglish + Chinese with newline before",
+    "commands": [{
+      "id": "4b1c9dbb-2292-4861-99c6-fcc93b824324",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15478fe1-47a0-437c-84b2-8dd5a15a8e1c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c75375-de16-4141-bb1a-78ca1c823a60",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "e049001f-61ce-4e23-a292-016d8b806b2f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e63e8eef-b3d1-4090-9975-46a2b26f26e0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "e6f56746-1a18-4bc0-b6bc-4687c137cbd3",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "02a182b7-fb49-4e1c-b54a-6f9d5923e468",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "c340de98-c240-4f99-9a6e-f458c8e40168",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "92313b7c-c5fa-40e4-aef2-4959e3a40ee5",
+    "name": "Search Runglish + Chinese with newline after",
+    "commands": [{
+      "id": "c34fd948-1190-4b06-a260-c1ce0a2ab137",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9a6c09b-f09e-4f46-9afe-7bf38608bd55",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f46217ba-95d3-4d37-83d0-f9db8c923460",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "81a66ab1-9339-4d32-bfb3-a5447578121e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bd5543a1-5382-451b-8f87-26ded62ff023",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c96417ac-0687-4d95-b432-46942c38ec1f",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "96ee5fe8-a563-4d70-b7b4-55e77f2291db",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "cba03ce6-c919-40fb-bf7e-bce062b26d91",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "a2a74189-da8a-4147-8917-6dc27366ecb7",
+    "name": "Search Runglish + Chinese with newlines",
+    "commands": [{
+      "id": "e3b2ef2c-714f-433b-bf67-6dae217dc12a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a57aef3-6e86-4236-87d2-6c019890dfef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e2de8c-7bab-4d75-81a3-def54694265d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Audi ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "37e490dd-90bf-41d5-9ad7-549cdab7e31e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b8783198-a7b0-4737-bc7f-e3530c0d76a3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "d10af9f5-51c2-4126-bf2f-7fafe408c19c",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "6faf4d04-4c2d-4f42-bcdf-29909a75803e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "82aa1f78-b4ef-47b1-a981-d7f83c899902",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "d492ce7b-5a64-41ac-94ce-2342071972ae",
+    "name": "Search Russian + Chinese",
+    "commands": [{
+      "id": "5a91bcea-52a3-4d63-87f2-59131f7c79b5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e782a452-a068-4fe1-a3e0-19c30375458d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c399ccb-66d8-4566-b5df-46e84b7f86ff",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "1e77e799-3609-4ae8-a9e1-51cebaf13833",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8c602a48-85e6-439c-b4e4-923aeeabe58c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "3ecfea7b-b280-4989-9434-734822df0598",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "b7fcbdb9-3d7b-427f-afc8-9d01b0861ae4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "aca295fa-00d0-4642-b489-d0f6c666ed60",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "2dd36b6f-616e-481e-9323-18ca2de99618",
+    "name": "Search Russian + Chinese with spaces before",
+    "commands": [{
+      "id": "17632ee7-cd67-474d-b33d-f997e40d2367",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82da10ed-daae-40f6-8403-3ee759905091",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c52eaff5-3c41-4f78-96ae-59e41371b818",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "d285bbc0-21f0-48ec-b07e-da13585370a5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1c466199-de44-4615-a001-cf9e60d2ef0a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "28e67f80-7ec8-4ba4-8f3c-77f3271ef850",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "c7a5da90-920b-4105-a08b-e45e54f5a8fa",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "5af418d9-b385-4d8b-b3a4-65ac47f91290",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "07c621ef-f63b-4e9d-b599-bbef443ed034",
+    "name": "Search Russian + Chinese with spaces after",
+    "commands": [{
+      "id": "d6c06f11-96a0-49ba-bb99-f5de4ad51615",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecdba1dc-0c47-463b-9a0d-c0e6dc881015",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a616933-1fbb-4911-abc9-a7bbc2852c55",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "388389c2-8c89-4ae9-bd3c-8c766a91f853",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "add3fa2a-1da6-4ae4-ba7c-6dff5cce9b31",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b2304836-f138-4d49-b603-cdec818ad5c8",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "33a8f32a-6549-421f-b399-56b5603821da",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "dec64a10-8a75-45c4-b7d1-129ac52fafbd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "7f7229d4-c1d2-4215-b26a-54b40025b773",
+    "name": "Search Russian + Chinese with spaces",
+    "commands": [{
+      "id": "d2380bd7-2815-4fa2-a67e-f40cf05a6cee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d52f032-94c9-4fae-ab7a-2e3c652d10ff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7790c094-0e3d-4178-bc44-87fed92ad892",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活   "
+    }, {
+      "id": "7ae83f5f-bbb8-4784-b116-60b44c36d02f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "34bfdd2a-b73f-4f5e-8b40-4d05452d6d48",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b3227126-7e8a-4c9a-9dac-89357885ee39",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "7488d96f-e9ae-4185-a799-9355e1c1430b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "2a45aee2-0464-4381-837c-def9730824c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "2e1ab1b7-12f2-4808-a2b3-9e535521d978",
+    "name": "Search Russian + Chinese with newline before",
+    "commands": [{
+      "id": "042e9320-37a8-4183-a824-a428d87fd11a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3c9dff2-12f2-4782-973f-be8a1dcd5626",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4881ba-9c44-4840-ac81-95680741f1a1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nАуди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活"
+    }, {
+      "id": "f5dbd864-74fe-42b8-bd55-ec90aeb0db3d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "51f16c4d-c793-4325-ba2e-e6c97caaa4af",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c436f794-08ce-4666-ac32-c569b406429a",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "1c8aa185-d9c0-4377-91e9-1a58e70682a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "68b1458b-13cf-4475-bc16-a08b8502ce8b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "3117c0fc-79f8-4267-9ab3-5f36f6b1e916",
+    "name": "Search Russian + Chinese with newline after",
+    "commands": [{
+      "id": "1ad661d8-9475-42aa-91ff-b187eb70c0f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9446cb88-e34e-4a34-9c38-1044ead10992",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aab055e8-62f0-4341-9570-93f69d16c7b4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ауди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活\\n"
+    }, {
+      "id": "c3271ba9-6485-457a-bae9-0a69503a0404",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "20b3742a-2391-4284-addd-55e75a9db121",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c27a11ee-d743-4c85-839c-9b4536ba80d0",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "70ede387-a973-4f20-88c7-823105c2b211",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "eb575358-9757-49d3-8b5e-f61854d87b7d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "0d43d544-7a8f-4c2a-b169-1e61b4f7137f",
+    "name": "Search Russian + Chinese with newline",
+    "commands": [{
+      "id": "2ea6d81b-9844-4987-8cbf-f7e5282077a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "126121b9-8153-4e06-9f49-75b8e06c7777",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e7a1d22-d556-4f5e-8c3f-691060d45af7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "\\nАуди ку7 有个老爷爷给小丰一支铅笔。这不是普通的铅笔，而是支神笔。晚上，小丰睡觉了。铅笔就自己站起来，在纸上画了一只老鼠。刚画完，老鼠打了个哈欠，伸伸懒腰，活\\n"
+    }, {
+      "id": "8776839d-69f9-4a58-a397-fd1ce2086188",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Ауди ку7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "450023a7-e895-4f79-962e-37e810c8faf5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "421d4c41-efe4-4b0a-8f47-15966919a237",
+      "comment": "",
+      "command": "//assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://auto.ru/sankt-peterburg/cars/audi/q7/all/?query=%D0%90%D1%83%D0%B4%D0%B8+%D0%BA%D1%837&from=searchline"
+    }, {
+      "id": "6b36d010-e487-4f00-aba4-f2b7af990112",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": "Audi"
+    }, {
+      "id": "d754bd1d-7b86-4047-bb14-432cc4e73566",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span",
+      "targets": [
+        ["css=.Button_hovered .Button__text", "css:finder"],
+        ["xpath=//div[@id='listing-filters']/div[2]/div[2]/div/div/div/div/div/div[2]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Q7"
+    }]
+  }, {
+    "id": "9f15fcd9-e2fe-4bf2-9613-16e90501aece",
+    "name": "Search special character",
+    "commands": [{
+      "id": "be3fb363-b3b7-47f6-832b-6ed439ca181e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47269636-592f-46d3-8120-95c523be44c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 > .TextInput__box", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span", "xpath:idRelative"],
+        ["xpath=//label/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по объявлениям')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5100326-641f-4c31-b172-ec5d5b4ce1f7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.TextInput__input_r8 .TextInput__control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='     ']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/div[3]/div/label/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "¶"
+    }, {
+      "id": "dbb7ad79-e74b-474a-8d05-b6ae6a464387",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c72f85c9-8bfa-40a8-8b6c-5a99c765e926",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'Ничего не найдено')]",
       "targets": [],
       "value": "30000"
     }]
